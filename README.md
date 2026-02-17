@@ -1,9 +1,9 @@
 
 <!-- badges: start -->
 
+[![R-CMD-check](https://github.com/derneld/fars/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/derneld/fars/actions/workflows/R-CMD-check.yaml)
 [![Codecov test
 coverage](https://codecov.io/gh/derneld/fars/graph/badge.svg)](https://app.codecov.io/gh/derneld/fars)
-[![R-CMD-check](https://github.com/derneld/fars/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/derneld/fars/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 # fars
