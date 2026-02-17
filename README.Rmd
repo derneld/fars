@@ -29,7 +29,7 @@ This package uses data from the NHTSA FARS, which contains a census of fatal mot
 
 ## Example
 
-This is a basic example showing how to summarize fatalities by month and year:
+This is a basic example showing how to summarize fatalities by month & year:
 
 ```{r example}
 library(fars)
