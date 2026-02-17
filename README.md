@@ -1,4 +1,11 @@
 
+<!-- badges: start -->
+
+[![Codecov test
+coverage](https://codecov.io/gh/derneld/fars/graph/badge.svg)](https://app.codecov.io/gh/derneld/fars)
+[![R-CMD-check](https://github.com/derneld/fars/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/derneld/fars/actions/workflows/R-CMD-check.yaml)
+<!-- badges: end -->
+
 # fars
 
 The goal of fars is to simplify the processing and visualization of
@@ -14,7 +21,7 @@ You can install the development version of fars from GitHub with:
 devtools::install_github("derneld/fars")
 ```
 
-## Date Source
+## Data Source
 
 This package uses data from the NHTSA FARS, which contains a census of
 fatal motor vehicle traffic crashes within the 50 States, the District
@@ -23,7 +30,7 @@ of Columbia, and Puerto Rico. Sample data for the years 2013, 2014, and
 
 ## Example
 
-This is a basic example showing how to summarize fatalities by month and
+This is a basic example showing how to summarize fatalities by month &
 year:
 
 ``` r
