@@ -1,0 +1,59 @@
+---
+output: github_document
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# fars
+
+The goal of fars is to simplify the processing and visualization of Fatality Analysis Reporting System (FARS) data from the National Highway Traffic Safety Administration. 
+
+## Installation
+
+You can install the development version of fars from GitHub with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("derneld/fars")
+```
+
+## Date Source
+This package uses data from the NHTSA FARS, which contains a census of fatal motor vehicle traffic crashes within the 50 States, the District of Columbia, and Puerto Rico. Sample data for the years 2013, 2014, and 2015 are included in the package.
+
+## Example
+
+This is a basic example showing how to summarize fatalities by month and year:
+
+```{r example}
+library(fars)
+
+# Summarize multiple years of data
+fars_summarize_years(c(2013, 2014, 2015))
+```
+
+You can also visualize fatalities on a state-wide map. For example, to view fatalities in State ID 1 (Alabama) for the year 2013:
+
+```{r exampe}
+# Plot fatalities for a specific state and year
+fars_map_state(1, 2013)
+```
+
+What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+
+```{r cars}
+summary(cars)
+```
+
+##Package Overview
+The package provides three main exported functions:
+
+- `fars_read_years()`: Efficiently reads multiple FARS data files.
+- `fars_summarize_years()`: Produces a monthly summary table across years.
+- `fars_map_state()`: Draws a map of accident locations for a given state.

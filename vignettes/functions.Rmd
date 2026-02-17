@@ -1,0 +1,39 @@
+---
+title: "Using the FARS data"
+author: "Donald Davis"
+date: "2026-02-13"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Using the FARS data}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(fars)
+```
+
+## Setup and Data Location
+
+The FARS data files are stored in the package's `inst/extdata` directory. To use the functions in this package, you first need to locate these files on your system:
+
+```{r}
+# Locate the sample data provided with the package
+fars_path <- system.file("extdata", package = "fars")
+
+# List available files
+list.files(fars_path)
+
+# Set working directory to where the data lives
+setwd(fars_path)
+
+# Now run the summary
+fars_summarize_years(c(2013, 2014, 2015))
+```
